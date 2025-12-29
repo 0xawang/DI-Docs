@@ -1,0 +1,92 @@
+/* DI Network Documentation Custom Styles */
+
+/* Brand Colors */
+:root {
+  --di-primary: #6366f1;
+  --di-secondary: #8b5cf6;
+  --di-accent: #06b6d4;
+  --di-dark: #1e293b;
+  --di-light: #f8fafc;
+}
+
+/* Header Customization */
+.book-header {
+  background: linear-gradient(135deg, var(--di-primary), var(--di-secondary));
+  border-bottom: 2px solid var(--di-accent);
+}
+
+.book-header h1 {
+  color: white;
+  font-weight: 600;
+}
+
+/* Navigation Styling */
+.book-summary {
+  background: var(--di-light);
+  border-right: 1px solid #e2e8f0;
+}
+
+.book-summary ul.summary li a {
+  color: var(--di-dark);
+  transition: all 0.2s ease;
+}
+
+.book-summary ul.summary li a:hover {
+  background: var(--di-primary);
+  color: white;
+  border-radius: 4px;
+}
+
+.book-summary ul.summary li.active > a {
+  background: var(--di-accent);
+  color: white;
+  border-radius: 4px;
+}
+
+/* Code Blocks */
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code {
+  background: #f1f5f9;
+  color: var(--di-primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Tables */
+.book .book-body .page-wrapper .page-inner section.normal table th {
+  background: var(--di-primary);
+  color: white;
+  padding: 12px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Links */
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: var(--di-primary);
+  text-decoration: none;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+  border-bottom: 1px solid var(--di-primary);
+}
+
+/* Headings */
+.book .book-body .page-wrapper .page-inner section.normal h1 {
+  border-bottom: 2px solid var(--di-primary);
+  padding-bottom: 10px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+  border-bottom: 1px solid var(--di-accent);
+  padding-bottom: 8px;
+}

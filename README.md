@@ -1,39 +1,41 @@
-# Welcome to DI Network
+# DI Network Documentation
 
-DI Network is a comprehensive decentralized finance (DeFi) ecosystem that enables seamless cross-chain interoperability, synthetic asset trading, and advanced financial primitives. Built for the multi-chain future, DI Network provides a unified DeFi experience across multiple blockchain networks.
+Welcome to the comprehensive documentation for DI Network, a next-generation synthetic asset protocol that enables trading of real-world assets on the blockchain.
 
 ## What is DI Network?
 
-DI Network consists of four main components working together:
+DI Network is a decentralized protocol that provides:
 
-* **🪙 [Tokens Subsystem](subsystems/tokens.md)** - Native DI token, DUSD stablecoin, and tokenomics
-* **🌉 [Cross-Chain Bridge](subsystems/cross-chain.md)** - Seamless multi-chain asset transfers and gasless transactions
-* **📈 [DAssets Protocol](subsystems/dassets.md)** - Synthetic asset trading (stocks, commodities, forex)
-* **⚡ [DPerp Trading](subsystems/dperp.md)** - GMX-style perpetual trading with up to 50x leverage
+- **Synthetic Asset Trading**: Trade stocks, commodities, forex, and crypto without custody
+- **Perpetual Futures**: CEX-style order book trading with up to 100x leverage
+- **DUSD Stablecoin**: Algorithmic stablecoin backed by over-collateralization
+- **Cross-Chain Infrastructure**: Seamless asset bridging across multiple blockchains
 
 ## Key Features
 
-### 🌐 Multi-Chain Native
-- **6 Supported Networks**: Ethereum, BSC, Polygon, Arbitrum, Base, Crossfi
-- **Unified Experience**: Single interface across all chains
-- **Cross-Chain Assets**: Bridge and trade assets seamlessly
+### 🔄 Synthetic Assets (DAssets)
+Trade synthetic versions of real-world assets with oracle-based pricing and zero slippage.
 
-### 💱 Synthetic Assets
-- **Global Markets**: Trade stocks, commodities, forex 24/7
-- **No Slippage**: Oracle-based pricing eliminates AMM slippage
-- **Instant Settlement**: On-chain execution and settlement
+### ⚡ Perpetual Trading (DPerp)
+Professional perpetual futures trading with CEX-style order books and trader-to-trader matching.
 
-### ⚡ Advanced Trading
-- **High Leverage**: Up to 50x leverage on major assets
-- **Deep Liquidity**: LP pools provide consistent liquidity
-- **Risk Management**: Automated liquidations and funding rates
+### 💰 DUSD Stablecoin
+Algorithmic stablecoin with dynamic backing and advanced risk management.
 
-### 🏛️ Decentralized Governance
-- **DAO Controlled**: Community governance of all parameters
-- **Staking Rewards**: Earn 8-20% APY on staked DI tokens
-- **Fee Sharing**: Protocol revenue distributed to stakeholders
+### 🌉 Cross-Chain Bridge
+Seamless asset transfers and meta-transactions across supported blockchains.
 
-## Quick Navigation
+## Getting Started
+
+{% content-ref url="introduction/quick-start.md" %}
+[quick-start.md](introduction/quick-start.md)
+{% endcontent-ref %}
+
+{% content-ref url="introduction/protocol-overview.md" %}
+[protocol-overview.md](introduction/protocol-overview.md)
+{% endcontent-ref %}
+
+## Core Components
 
 <table data-view="cards">
 <thead>
@@ -45,94 +47,87 @@ DI Network consists of four main components working together:
 </thead>
 <tbody>
 <tr>
-<td><strong>🚀 Quick Start</strong></td>
-<td>Get started with DI Network in minutes</td>
-<td><a href="introduction/quick-start.md">quick-start.md</a></td>
+<td><strong>DAssets - Synthetic Trading</strong></td>
+<td>Trade synthetic assets with virtual positions and dynamic risk management</td>
+<td><a href="dassets/">dassets</a></td>
 </tr>
 <tr>
-<td><strong>📖 Protocol Overview</strong></td>
-<td>Understand the complete ecosystem</td>
-<td><a href="introduction/protocol-overview.md">protocol-overview.md</a></td>
+<td><strong>DPerp - Perpetual Futures</strong></td>
+<td>CEX-style order book trading with up to 100x leverage</td>
+<td><a href="dassets/dperp/">dperp</a></td>
 </tr>
 <tr>
-<td><strong>🏗️ Architecture</strong></td>
-<td>Deep dive into technical architecture</td>
-<td><a href="architecture/system-overview.md">system-overview.md</a></td>
+<td><strong>DUSD Stablecoin</strong></td>
+<td>Algorithmic stablecoin with collateral backing and interest rates</td>
+<td><a href="core-infrastructure/dusd/">dusd</a></td>
 </tr>
 <tr>
-<td><strong>👨‍💻 Developer Docs</strong></td>
-<td>Build on DI Network</td>
-<td><a href="developers/setup.md">setup.md</a></td>
-</tr>
-<tr>
-<td><strong>📊 Trading Guide</strong></td>
-<td>Learn to trade synthetic assets</td>
-<td><a href="user-guides/trading.md">trading.md</a></td>
-</tr>
-<tr>
-<td><strong>🔒 Smart Contracts</strong></td>
-<td>Contract reference and APIs</td>
-<td><a href="contracts/core/">core</a></td>
+<td><strong>Cross-Chain Bridge</strong></td>
+<td>Seamless asset transfers and gasless transactions</td>
+<td><a href="cross-chain/">cross-chain</a></td>
 </tr>
 </tbody>
 </table>
 
-## Protocol Statistics
+## Architecture Overview
 
-{% hint style="info" %}
-**Live Protocol Metrics**
+```mermaid
+graph TB
+    A[DI Network Protocol] --> B[Core Infrastructure]
+    A --> C[Synthetic Assets]
+    A --> D[Cross-Chain Bridge]
+    
+    B --> B1[DI Token]
+    B --> B2[DUSD Stablecoin]
+    B --> B3[Oracle System]
+    
+    C --> C1[DSwap - Spot Trading]
+    C --> C2[DPerp - Perpetual Trading]
+    C --> C3[DUSD Staking]
+    
+    D --> D1[DI Gateway]
+    D --> D2[Token Bridge]
+    D --> D3[Meta Transactions]
+```
 
-* **Total Value Locked**: $180M+ across all chains
-* **Daily Trading Volume**: $10M+ across all products  
-* **Active Users**: 50K+ monthly active users
-* **Supported Assets**: 50+ synthetic assets available
-{% endhint %}
+## Quick Navigation
 
-## Supported Networks
+### For Traders
+- [Getting Started Guide](user-guides/getting-started.md)
+- [Spot Trading Tutorial](user-guides/trading/spot.md)
+- [Perpetual Trading Guide](user-guides/trading/perpetuals.md)
+- [Risk Management](user-guides/trading/risk.md)
 
-| Network | Chain ID | Status | Features |
-| ------- | -------- | ------ | -------- |
-| **Ethereum** | 1 | ✅ Live | Full protocol suite |
-| **BSC** | 56 | ✅ Live | Full protocol suite |
-| **Polygon** | 137 | ✅ Live | Full protocol suite |
-| **Arbitrum** | 42161 | ✅ Live | Full protocol suite |
-| **Base** | 8453 | ✅ Live | Full protocol suite |
-| **Crossfi** | 4157 | ✅ Live | Full protocol suite |
+### For Developers
+- [Development Setup](developers/setup.md)
+- [SDK Reference](developers/sdk/)
+- [Smart Contracts](developers/contracts/)
+- [API Documentation](developers/api/)
 
-## Getting Started
-
-Choose your path to get started with DI Network:
-
-{% content-ref url="introduction/quick-start.md" %}
-[quick-start.md](introduction/quick-start.md)
-{% endcontent-ref %}
-
-{% content-ref url="user-guides/getting-started.md" %}
-[getting-started.md](user-guides/getting-started.md)
-{% endcontent-ref %}
-
-{% content-ref url="developers/setup.md" %}
-[setup.md](developers/setup.md)
-{% endcontent-ref %}
+### For Stakers
+- [DUSD Staking Guide](dassets/dusd-staking.md)
+- [Governance Participation](user-guides/governance/)
+- [Rewards System](user-guides/staking/rewards.md)
 
 ## Community & Support
 
-Join our growing community:
+- **Discord**: [Join our community](https://discord.gg/dinetwork)
+- **Twitter**: [@DINetwork](https://twitter.com/dinetwork)
+- **GitHub**: [DI Network](https://github.com/di-network)
+- **Documentation**: [GitBook](https://docs.dinetwork.org)
 
-* **Discord**: [https://discord.gg/dinetwork](https://discord.gg/dinetwork)
-* **Twitter**: [https://twitter.com/dinetwork](https://twitter.com/dinetwork)
-* **Telegram**: [https://t.me/dinetwork](https://t.me/dinetwork)
-* **GitHub**: [https://github.com/dinetwork](https://github.com/dinetwork)
+## Security & Audits
+
+DI Network prioritizes security through:
+- Multiple security audits by leading firms
+- Formal verification of critical functions
+- Comprehensive testing and bug bounty programs
+- Gradual rollout with conservative parameters
+
+{% content-ref url="security/" %}
+[security](security/)
+{% endcontent-ref %}
 
 ---
 
-{% hint style="warning" %}
-**Risk Disclaimer**
-
-DI Network is an experimental DeFi protocol. Please understand the risks before using:
-- Smart contract risks and potential bugs
-- Market volatility and liquidation risks  
-- Regulatory risks and compliance issues
-
-Only invest what you can afford to lose. See our [Security & Audits](resources/security.md) page for more information.
-{% endhint %}
+**Ready to get started?** Check out our [Quick Start Guide](introduction/quick-start.md) or explore the [Protocol Overview](introduction/protocol-overview.md) to learn more about DI Network's innovative approach to synthetic asset trading.

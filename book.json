@@ -1,0 +1,35 @@
+{
+  "root": "./",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "search",
+    "lunr",
+    "sharing",
+    "fontsettings",
+    "highlight",
+    "mermaid-gb3"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": true,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": ["twitter"]
+    }
+  },
+  "title": "DI Network Documentation",
+  "description": "Comprehensive documentation for DI Network's synthetic asset protocol",
+  "author": "DI Network Team",
+  "language": "en",
+  "gitbook": ">=3.0.0"
+}

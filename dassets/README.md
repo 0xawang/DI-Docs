@@ -7,7 +7,7 @@ DAssets is DI Network's comprehensive synthetic asset trading system, enabling u
 The DAssets protocol combines spot trading and perpetual trading into a unified system, providing access to global markets 24/7 with oracle-based pricing and advanced risk management:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DAssets Protocol] --> B[DSwap - Spot Trading]
     A --> C[DPerp - Perpetual Trading]
     A --> D[DUSD Staking]

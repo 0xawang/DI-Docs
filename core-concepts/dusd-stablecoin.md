@@ -18,7 +18,7 @@ DUSD (DI USD) is not just another stablecoin - it's the lifeblood of the DI Netw
 Unlike algorithmic stablecoins that rely on market mechanisms, DUSD uses over-collateralization:
 
 ```mermaid
-graph TD
+flowchart TD
     A[User Deposits Collateral] --> B[System Validates Collateral]
     B --> C[Mint DUSD up to 75% of Value]
     C --> D[DUSD Maintains $1 Peg]
@@ -216,7 +216,7 @@ await liquidityPool.removeLiquidity(dlpTokens);
 ### Supply Dynamics
 
 ```mermaid
-graph LR
+flowchart LR
     A[Collateral Deposits] --> B[DUSD Minting]
     B --> C[DUSD Supply Increase]
     C --> D[Trading & Usage]

@@ -7,7 +7,7 @@ The Core Infrastructure forms the foundation of DI Network, providing the essent
 The core infrastructure consists of three main components that work together to provide a stable, secure, and scalable foundation:
 
 ```mermaid
-graph TB
+flowchart TB
     A[Core Infrastructure] --> B[DI Token System]
     A --> C[DUSD Stablecoin]
     A --> D[Oracle System]
@@ -131,7 +131,7 @@ Clean interfaces and comprehensive documentation:
 ### Value Flow
 
 ```mermaid
-graph LR
+flowchart LR
     A[Protocol Usage] --> B[Fees Generated]
     B --> C[Fee Distribution]
     C --> D[DI Stakers 50%]

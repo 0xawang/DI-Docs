@@ -5,7 +5,7 @@ DI Network is a comprehensive decentralized finance ecosystem designed for the m
 ## Core Architecture
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Network Ecosystem] --> B[Cross-Chain Bridge]
     A --> C[Synthetic Assets DAssets]
     A --> D[Core Infrastructure]

@@ -7,7 +7,7 @@ DI Gateway is the core cross-chain communication protocol that enables smart con
 DI Gateway provides secure, decentralized cross-chain communication:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Gateway] --> B[Cross-Chain Calls]
     A --> C[Message Validation]
     A --> D[Relayer Network]

@@ -5,7 +5,7 @@ DI Gateway implements multiple security layers to protect against attacks and en
 ## Security Architecture
 
 ```mermaid
-graph TB
+flowchart TB
     A[Security Layers] --> B[Cryptographic Security]
     A --> C[Economic Security]
     A --> D[Operational Security]

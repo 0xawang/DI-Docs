@@ -7,7 +7,7 @@ The DI Network SDK provides a comprehensive JavaScript/TypeScript interface for 
 The SDK is designed for ease of use while providing access to all protocol functionality:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Network SDK] --> B[Core Methods]
     A --> C[Trading Methods]
     A --> D[Bridge Methods]

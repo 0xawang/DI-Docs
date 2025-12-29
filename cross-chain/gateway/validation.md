@@ -5,7 +5,7 @@ DI Gateway implements comprehensive message validation to ensure secure and reli
 ## Validation Framework
 
 ```mermaid
-graph TB
+flowchart TB
     A[Message Received] --> B[Signature Verification]
     B --> C[Replay Protection]
     C --> D[Parameter Validation]

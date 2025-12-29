@@ -7,7 +7,7 @@ DUSD is DI Network's over-collateralized algorithmic stablecoin, serving as the 
 DUSD combines the stability of over-collateralization with the flexibility of algorithmic design:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DUSD Stablecoin] --> B[Over-Collateralized]
     A --> C[Multi-Collateral]
     A --> D[Interest Bearing]
@@ -102,7 +102,7 @@ Automated liquidation engine protecting protocol solvency.
 
 ### Supply Dynamics
 ```mermaid
-graph LR
+flowchart LR
     A[Collateral Deposits] --> B[DUSD Minting]
     B --> C[Protocol Usage]
     C --> D[Interest Accrual]

@@ -7,7 +7,7 @@ The Cross-Chain Bridge enables seamless interoperability across multiple blockch
 DI Network's cross-chain infrastructure consists of three main components working together to provide a unified multi-chain experience:
 
 ```mermaid
-graph TB
+flowchart TB
     A[Cross-Chain Bridge] --> B[DI Gateway]
     A --> C[Token Bridge]
     A --> D[Meta Transactions]
@@ -130,7 +130,7 @@ sequenceDiagram
 ### Security Model
 
 ```mermaid
-graph TB
+flowchart TB
     A[Message Initiation] --> B[Signature Validation]
     B --> C[Rate Limit Check]
     C --> D[Relayer Verification]

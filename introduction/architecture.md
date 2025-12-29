@@ -5,7 +5,7 @@ DI Network's architecture is designed as a modular, multi-chain protocol that pr
 ## System Architecture
 
 ```mermaid
-graph TB
+flowchart TB
     subgraph "Application Layer"
         A1[Web App]
         A2[Mobile App]

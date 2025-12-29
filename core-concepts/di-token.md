@@ -25,7 +25,7 @@ DI tokens serve as the main collateral for minting DUSD stablecoin:
 - **Liquidation Penalty**: 5% bonus to liquidators
 
 ```mermaid
-graph LR
+flowchart LR
     A[DI Tokens] --> B[Deposit as Collateral]
     B --> C[Mint DUSD 75% ratio]
     C --> D[Trade Synthetic Assets]

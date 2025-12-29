@@ -7,7 +7,7 @@ Learn how to trade synthetic assets and perpetual contracts on DI Network, from 
 DI Network offers two main trading systems:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Network Trading] --> B[DSwap - Spot Trading]
     A --> C[DPerp - Perpetual Trading]
     

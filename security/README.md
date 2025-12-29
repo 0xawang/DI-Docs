@@ -5,7 +5,7 @@ DI Network implements a comprehensive security framework with multiple layers of
 ## Security Framework
 
 ```mermaid
-graph TB
+flowchart TB
     A[Security Framework] --> B[Smart Contract Security]
     A --> C[Economic Security]
     A --> D[Operational Security]

@@ -72,7 +72,7 @@ Seamless asset transfers and meta-transactions across supported blockchains.
 ## Architecture Overview
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Network Protocol] --> B[Core Infrastructure]
     A --> C[Synthetic Assets]
     A --> D[Cross-Chain Bridge]

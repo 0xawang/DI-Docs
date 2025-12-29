@@ -7,7 +7,7 @@ The DI Token is the native governance and utility token of the DI Network ecosys
 DI Token serves four primary functions that make it essential to the protocol:
 
 ```mermaid
-graph TB
+flowchart TB
     A[DI Token] --> B[Governance Token]
     A --> C[Utility Token]
     A --> D[Collateral Asset]
@@ -110,7 +110,7 @@ Multiple mechanisms create deflationary pressure:
 ### Value Accrual Mechanisms
 
 ```mermaid
-graph LR
+flowchart LR
     A[Protocol Growth] --> B[Increased Usage]
     B --> C[More Fees Generated]
     C --> D[Higher Staking Rewards]

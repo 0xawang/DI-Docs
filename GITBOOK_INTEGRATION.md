@@ -70,7 +70,7 @@ The `book.json` file is configured for GitBook.com with:
 Use mermaid code blocks for diagrams:
 ```markdown
 ```mermaid
-graph TB
+flowchart TB
     A[Start] --> B[Process]
     B --> C[End]
 ```
